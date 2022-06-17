@@ -17,7 +17,19 @@ const renderPosts = (dataArr) => {
             <a class="card-link link-danger" onclick="deletePost(${post.id})"><i class="fa-solid fa-trash-can" id="delete-post"></i></a>
         </div>
     </div>
-</div>` 
+</div>
+<div class="col-lg-6 col-md-12 col-12">
+                    <div class="card text-center border-0">
+                        <div class="card-header">Post</div>
+                        <div class="card-body">
+                            <h4 class="card-id" ${post.id}>1</h4>
+                            <h5 class="card-title">${post.title}</h5>
+                            <p class="card-text">${post.body}</p>
+                            <a href="index.html" class="card-link fw-bold" id="read-more" onclick="readPost(${post.id})">Show Less</a>
+                            <a href="#" class="card-link link-danger" onclick="deletePost(${post.id})"><i class="fa-solid fa-trash-can" id="delete-post"></i></a>
+                        </div>
+                    </div>
+                </div>` 
   });
   
   postList.innerHTML = output;
