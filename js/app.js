@@ -17,7 +17,7 @@ const renderPosts = (dataArr) => {
             <h4 class="card-id">${post.id}</h4>
             <h5 class="card-title">${post.title}</h5>
             <p class="card-text">${post.body}</p>
-            <a href="#" class="card-link fw-bold" id="read-more" onclick="readPost(${post.id})">Read More...</a>
+            <a class="card-link fw-bold" id="read-more" onclick="readPost(${post.id})">Read More...</a>
             <a class="card-link link-success" onclick="editPost(${post.id})"><i class="fa-solid fa-pen-to-square"></i></a>
             <a class="card-link link-danger" onclick="deletePost(${post.id})"><i class="fa-solid fa-trash-can" id="delete-post"></i></a>
         </div>

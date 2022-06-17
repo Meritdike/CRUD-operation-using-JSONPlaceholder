@@ -5,8 +5,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
-    font-family: 'Nunito', sans-serif;
+
+a {
+    text-decoration: none !important;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 769px) {
