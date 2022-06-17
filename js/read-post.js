@@ -6,19 +6,7 @@ dataArr = [];
 const renderPosts = (dataArr) => {
   output = '';
   dataArr.forEach(post => {
-    output +=`<div class="col-lg-4 col-md-6 col-12 my-2">
-    <div class="card text-center h-100">
-        <div class="card-header">Posts</div>
-        <div class="card-body" data-id=${post.id}>
-            <h4 class="card-id">${post.id}</h4>
-            <h5 class="card-title">${post.title}</h5>
-            <p class="card-text">${post.body}</p>
-            <a href="read-post.html" class="card-link fw-bold" id="read-more" onclick="readPost(${post.id})">Show Less</a>
-            <a class="card-link link-danger" onclick="deletePost(${post.id})"><i class="fa-solid fa-trash-can" id="delete-post"></i></a>
-        </div>
-    </div>
-</div>
-<div class="col-lg-6 col-md-12 col-12">
+    output +=`<div class="col-lg-6 col-md-12 col-12">
                     <div class="card text-center border-0">
                         <div class="card-header">Post</div>
                         <div class="card-body">
