@@ -1,10 +1,10 @@
 const postList = document.querySelector('#posts');
-
+const url = 'https://jsonplaceholder.typicode.com/posts';
 
 dataArr = [];
 
 const renderPosts = (dataArr) => {
-  output = '';
+    output = '';
   dataArr.forEach(post => {
     output +=`<div class="col-lg-6 col-md-12 col-12">
                     <div class="card text-center border-0">
@@ -24,7 +24,6 @@ const renderPosts = (dataArr) => {
 }
 
 
-const url = 'https://jsonplaceholder.typicode.com/posts';
 
 
 function renderReadPost() {
