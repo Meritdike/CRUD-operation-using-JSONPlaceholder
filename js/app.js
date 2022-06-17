@@ -68,7 +68,7 @@ createPost.addEventListener('submit', (e) =>{
 function editPost(id) {
   // console.log(id);
   fetch(`${url}/${id}`, {
-    method: 'PUT',
+    method: 'PATCH',
     body: JSON.stringify({
       id: id,
       title: title.value,

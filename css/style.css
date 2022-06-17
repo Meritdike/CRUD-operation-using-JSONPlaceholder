@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+body, .bg-navbar{
+    background-color: rgb(255, 172, 146) !important;
+
+}
+
 a {
     text-decoration: none !important;
     cursor: pointer;
