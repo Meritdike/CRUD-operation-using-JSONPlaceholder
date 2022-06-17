@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Read More</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+              <a class="navbar-brand fw-bold" href="#" style="font-family: 'Pacifico', cursive;">B.Blogs</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Blogs</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contacts</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link me-2" href="#">About</a>
+                  </li>
+                  <button class="btn btn-outline-success rounded-pill me-2" type="submit">Sign In</button>
+                  <button class="btn btn-outline-success rounded-pill" type="submit">Sign Up</button>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <section id="post-section" class="pt-5">
+        <div class="container">
+            <div class="text-start">
+                <a href="index.html" class="card-link fw-bold" id="read-more">BACK</a>   
+            </div>
+            <div class="row d-flex justify-content-center align-items-center flex-column" id="posts" style="height: 90vh;">
+                <div class="col-lg-6 col-md-12 col-12">
+                    <div class="card text-center border-0">
+                        <div class="card-header">Post</div>
+                        <div class="card-body">
+                            <h4 class="card-id">1</h4>
+                            <h5 class="card-title">Read Me</h5>
+                            <p class="card-text">Hello World</p>
+                            <a href="index.html" class="card-link fw-bold" id="read-more" onclick="readPost()">Show Less</a>
+                            <a href="#" class="card-link link-danger" onclick="deletePost()"><i class="fa-solid fa-trash-can" id="delete-post"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark text-white fw-bold mt-3">
+        <div class="container py-3">
+            <p class="mb-0 pt-3">Designed by Merit Dike</p>
+            <p>Copyrights &copy 2022</p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/e774502dc0.js" crossorigin="anonymous"></script>
+    <script src="js/read-post.js"></script>
+</body>
+</html>
