@@ -2,7 +2,6 @@ const postList = document.querySelector('#posts');
 const createPost = document.querySelector('#create-post');
 const title = document.getElementById('title');
 const content = document.getElementById('content');
-const btn = document.querySelector('.btn');
 
 
 dataArr = [];
